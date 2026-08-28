@@ -1,14 +1,13 @@
-# Burak Bekir Çakırer — Engineering Portfolio V2.1 Fix
+# Burak Bekir Çakırer — Engineering Portfolio V2.3
 
-Clean replacement package for `burakcakirer.github.io`.
+Expanded multidisciplinary engineering portfolio.
 
-## Important
-Delete or overwrite the existing site files with the contents of this package.
-Do not merge the old `index.html`.
+## Newly added
+- 20 kVA Three-Phase Power Transformer — Ansys Maxwell 2D FEM optimization
+- Two-Axis Galvo Laser Scanner — Arduino/Python coordinated motion and laser trajectory control
 
 ## Deploy
-1. Open the local `burakcakirer.github.io` repository.
-2. Replace `index.html`, `styles.css`, `assets/`, and the CV with these files.
-3. Commit: `Fix portfolio layout and navigation`
-4. Push to `main`.
-5. Hard-refresh the site with Ctrl+F5 after GitHub Pages redeploys.
+Replace the contents of the local `burakcakirer.github.io` repository with this package, then commit and push to `main`.
+
+Suggested commit:
+`Add transformer FEM and galvo scanner projects`

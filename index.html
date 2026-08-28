@@ -39,23 +39,79 @@
 </section>
 
 <section id="projects" class="section">
-<div class="kicker">SELECTED WORK</div><h2>Featured engineering projects.</h2>
-<div class="grid">
-<article class="card feature">
+<div class="kicker">SELECTED WORK</div>
+<h2>Engineering projects across hardware and software.</h2>
+<p class="section-lead">My portfolio spans embedded systems, analog electronics, digital design, PCB/power, electromagnetics and robotics. Use the filters to explore each area.</p>
+
+<div class="filters" role="group" aria-label="Project filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="embedded">Embedded</button>
+  <button class="filter-btn" data-filter="hardware">Hardware / PCB</button>
+  <button class="filter-btn" data-filter="power">Power & Machines</button>
+  <button class="filter-btn" data-filter="analog">Analog & Signal</button>
+  <button class="filter-btn" data-filter="digital">Digital</button>
+  <button class="filter-btn" data-filter="em">Electromagnetics</button>
+  <button class="filter-btn" data-filter="robotics">Robotics</button>
+</div>
+
+<div class="grid project-grid">
+<article class="card project-card" data-category="embedded">
 <img src="assets/images/fan-prototype.jpg" alt="STM32 PWM fan prototype">
 <div class="cardbody"><span class="num">01 / EMBEDDED</span><h3>STM32G4 PWM Fan Monitor</h3><p>Hardware PWM actuation with timer input capture, tachometer feedback, RPM calculation and SH1107 OLED telemetry.</p><div class="tags"><span>STM32G431</span><span>PWM</span><span>Input Capture</span><span>I²C</span></div><a href="https://github.com/burakcakirer/stm32g4-pwm-fan-monitor">View repository ↗</a></div>
 </article>
-<article class="card">
+
+<article class="card project-card" data-category="embedded">
 <img src="assets/images/imu-setup.jpg" alt="STM32 ICM-20601 IMU setup">
-<div class="cardbody"><span class="num">02 / SENSORS</span><h3>ICM-20601 SPI Telemetry</h3><p>Register-level SPI communication, burst sensor acquisition and real-time OLED visualization.</p><div class="tags"><span>SPI</span><span>IMU</span><span>SH1107</span></div><a href="https://github.com/burakcakirer/stm32g4-icm20601-spi-telemetry">View repository ↗</a></div>
+<div class="cardbody"><span class="num">02 / EMBEDDED</span><h3>ICM-20601 SPI Telemetry</h3><p>Register-level SPI communication, burst sensor acquisition and real-time OLED visualization.</p><div class="tags"><span>SPI</span><span>IMU</span><span>SH1107</span></div><a href="https://github.com/burakcakirer/stm32g4-icm20601-spi-telemetry">View repository ↗</a></div>
 </article>
-<article class="card">
+
+<article class="card project-card" data-category="embedded">
 <img src="assets/images/imu-oled.jpg" alt="IMU telemetry on OLED">
-<div class="cardbody"><span class="num">03 / DATA ACQUISITION</span><h3>ICM-20601 I²C Monitor</h3><p>14-byte burst acquisition, accelerometer/gyroscope processing, moving-average filtering and OLED telemetry.</p><div class="tags"><span>I²C</span><span>Filtering</span><span>Telemetry</span></div><a href="https://github.com/burakcakirer/stm32g4-icm20601-i2c-monitor">View repository ↗</a></div>
+<div class="cardbody"><span class="num">03 / EMBEDDED</span><h3>ICM-20601 I²C Monitor</h3><p>14-byte burst acquisition, accelerometer/gyroscope processing, moving-average filtering and OLED telemetry.</p><div class="tags"><span>I²C</span><span>Filtering</span><span>Telemetry</span></div><a href="https://github.com/burakcakirer/stm32g4-icm20601-i2c-monitor">View repository ↗</a></div>
 </article>
-<article class="card textcard"><div class="cardbody"><span class="num">04 / PCB DESIGN</span><h3>Autonomous Defense System Power Board</h3><p>Custom multi-rail power distribution board for motors, microcontrollers, sensors and laser subsystems, with protection, grounding, thermal and current-carrying constraints.</p><div class="tags"><span>Altium</span><span>Power</span><span>Protection</span></div><span class="status">ONGOING</span></div></article>
-<article class="card textcard"><div class="cardbody"><span class="num">05 / ROBOTICS</span><h3>Autonomous Guided Vehicle</h3><p>Capstone autonomous mobile robot using A* global planning, Dynamic Window Approach, PID speed control and LiDAR–odometry integration.</p><div class="tags"><span>A*</span><span>DWA</span><span>PID</span><span>LiDAR</span></div><span class="status">ONGOING</span></div></article>
-<article class="card textcard"><div class="cardbody"><span class="num">06 / ANALOG</span><h3>Touch Sensor Interface</h3><p>Analog readout converting small capacitance changes into a repeatable DC output using AC excitation, discrete transistor amplification and AC–DC conversion.</p><div class="tags"><span>Analog</span><span>BJT</span><span>LTspice</span></div></div></article>
+
+<article class="card project-card textcard" data-category="embedded">
+<div class="cardbody"><span class="num">04 / EMBEDDED</span><h3>SH1107 OLED Driver</h3><p>Framebuffer-based 128×128 monochrome display driver with pixel, line and rectangle primitives for STM32G4.</p><div class="tags"><span>Framebuffer</span><span>I²C</span><span>Bresenham</span></div><a href="https://github.com/burakcakirer/stm32g4-sh1107-display-driver">View repository ↗</a></div>
+</article>
+
+<article class="card project-card textcard" data-category="hardware">
+<div class="cardbody"><span class="num">05 / PCB & POWER</span><h3>Autonomous Defense System Power Board</h3><p>Custom multi-rail power distribution board for motors, microcontrollers, sensors and laser subsystems, with protection, grounding, thermal and current-carrying constraints.</p><div class="tags"><span>Altium</span><span>Power</span><span>Protection</span></div><span class="status">ONGOING</span></div>
+</article>
+
+<article class="card project-card" data-category="analog">
+<img src="assets/images/capacitive-sensor.jpg" alt="Capacitive sensor analog readout laboratory validation">
+<div class="cardbody"><span class="num">06 / ANALOG & SIGNAL</span><h3>Capacitive Sensor Analog Readout</h3><p>Fully analog capacitance-to-voltage chain using a Wien Bridge oscillator, sensor-dependent common-emitter gain stage and Schottky envelope detector, validated in LTspice and on the bench.</p><div class="tags"><span>NE5532</span><span>BC547</span><span>240 kHz</span><span>LTspice</span></div><span class="result-chip">30–200 pF → 0.328–1.11 V DC</span></div>
+</article>
+
+<article class="card project-card" data-category="analog">
+<img src="assets/images/digital-stethoscope.jpg" alt="MATLAB digital stethoscope GUI">
+<div class="cardbody"><span class="num">07 / SIGNAL PROCESSING</span><h3>Digital Stethoscope System</h3><p>TL072-based heart/lung analog filtering with Arduino acquisition and a MATLAB App Designer interface for real-time raw/filtered waveform and FFT analysis.</p><div class="tags"><span>TL072</span><span>Arduino</span><span>MATLAB</span><span>FFT</span></div></div>
+</article>
+
+<article class="card project-card" data-category="digital">
+<img src="assets/images/switchable-counter.jpg" alt="Switchable counter and pulse generator simulation">
+<div class="cardbody"><span class="num">08 / DIGITAL ELECTRONICS</span><h3>Switchable Counter & Variable Pulse Generator</h3><p>CMOS transistor-level multiplexing, 74HC74 sequential logic, switchable BCD counting and variable-duty pulse generation verified with SPICE simulations.</p><div class="tags"><span>CMOS</span><span>74HC74</span><span>BCD</span><span>PWM</span></div></div>
+</article>
+
+<article class="card project-card" data-category="em">
+<img src="assets/images/helmholtz-coil.jpg" alt="Helmholtz coil inductance measurement">
+<div class="cardbody"><span class="num">09 / ELECTROMAGNETICS</span><h3>Helmholtz Coil Analysis & Inductance Measurement</h3><p>Magnetic-field derivation and homogeneity analysis, d/R optimization, inductance estimation, LTspice modelling and oscilloscope/function-generator validation.</p><div class="tags"><span>Biot–Savart</span><span>d/R = 1</span><span>LTspice</span><span>Oscilloscope</span></div></div>
+</article>
+
+<article class="card project-card textcard" data-category="robotics">
+<div class="cardbody"><span class="num">10 / ROBOTICS</span><h3>Autonomous Guided Vehicle</h3><p>Capstone autonomous mobile robot using A* global planning, Dynamic Window Approach, PID speed control and LiDAR–odometry integration.</p><div class="tags"><span>A*</span><span>DWA</span><span>PID</span><span>LiDAR</span></div><span class="status">ONGOING</span></div>
+</article>
+
+<article class="card project-card" data-category="power">
+<img src="assets/images/transformer-fea.jpg" alt="Ansys Maxwell transformer magnetic flux density analysis">
+<div class="cardbody"><span class="num">11 / POWER & ELECTROMAGNETICS</span><h3>20 kVA Three-Phase Transformer — FEM Optimization</h3><p>Designed and optimized a 10 kV / 400 V, 20 kVA three-phase transformer in Ansys Maxwell 2D. Core saturation was reduced from 2.98 T to a safe 1.51 T through geometry and lamination optimization, followed by equivalent-circuit extraction and efficiency analysis.</p><div class="tags"><span>Ansys Maxwell</span><span>FEM</span><span>Transformer</span><span>Power Systems</span></div><span class="result-chip">Peak efficiency: 97.21% at 50% load, PF = 1</span></div>
+</article>
+
+<article class="card project-card" data-category="robotics">
+<img src="assets/images/galvo-scanner.jpg" alt="Two-axis laser scanner drawing physical patterns">
+<div class="cardbody"><span class="num">12 / CONTROL & MECHATRONICS</span><h3>Two-Axis Galvo Laser Scanner</h3><p>Low-cost X–Y laser scanning platform combining two 28BYJ-48 stepper motors, ULN2003 drivers, Arduino control, Python serial commands, non-blocking trajectory generation and custom 3D-printed optomechanical mounts.</p><div class="tags"><span>Arduino</span><span>Python</span><span>AccelStepper</span><span>3D Printing</span></div><span class="result-chip">Physical projection of square, O, L and vector trajectories</span></div>
+</article>
+
 </div>
 </section>
 
@@ -94,4 +150,5 @@
 </section>
 </main>
 <footer>© 2026 Burak Bekir Çakırer <span>Electrical & Electronics Engineering Portfolio</span></footer>
+<script src="script.js"></script>
 </body></html>
