@@ -1,9 +1,8 @@
-# Portfolio Site Deployment
+# Burak Bekir Çakırer — Engineering Portfolio V2
 
-This is a zero-dependency static site suitable for GitHub Pages.
+Static GitHub Pages portfolio.
 
-1. Replace every `YOUR_GITHUB_USERNAME` in `index.html`.
-2. Create a repository such as `engineering-portfolio` or `<username>.github.io`.
-3. Commit `index.html` and `styles.css`.
-4. In **Settings → Pages**, deploy from the main branch/root (or use the user-site repository convention).
-5. Add authorized project photos later only after sanitizing backgrounds, labels and internal information.
+## Deploy
+Copy all files in this directory to the root of `burakcakirer.github.io`, commit, and push to `main`.
+
+The included CV file is linked from the hero and contact sections.

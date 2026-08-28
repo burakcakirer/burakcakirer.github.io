@@ -1,34 +1,89 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Burak Bekir Çakırer — Electrical & Electronics Engineering portfolio" />
-  <title>Burak Bekir Çakırer | Engineering Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Burak Bekir Çakırer — Electrical & Electronics Engineering portfolio focused on embedded systems, hardware design, PCB design, control and robotics.">
+<title>Burak Bekir Çakırer | Engineering Portfolio</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <nav><strong>BBC</strong><a href="#projects">Projects</a><a href="#about">About</a></nav>
-    <div class="hero-copy">
-      <p class="eyebrow">ELECTRICAL & ELECTRONICS ENGINEERING</p>
-      <h1>Embedded systems built with measurable engineering evidence.</h1>
-      <p class="lead">STM32 firmware, peripheral interfaces, sensor integration, PCB design, control and robotics.</p>
-      <div class="actions"><a class="primary" href="#projects">View projects</a><a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub</a></div>
-    </div>
-  </header>
-  <main>
-    <section id="projects">
-      <p class="eyebrow">SELECTED WORK</p><h2>Embedded systems portfolio</h2>
-      <div class="grid">
-        <article><span>01</span><h3>STM32G4 PWM Fan Monitor</h3><p>PWM actuation, timer input capture, tachometer RPM measurement, EXTI control and OLED telemetry.</p><div class="tags">STM32G431 · TIM · PWM · I²C</div><a href="https://github.com/YOUR_GITHUB_USERNAME/stm32g4-pwm-fan-monitor">Repository →</a></article>
-        <article><span>02</span><h3>ICM-20601 SPI Telemetry</h3><p>Register-level SPI integration, burst sensor acquisition, physical-unit conversion and SH1107 visualization.</p><div class="tags">SPI · IMU · Embedded C</div><a href="https://github.com/YOUR_GITHUB_USERNAME/stm32g4-icm20601-spi-telemetry">Repository →</a></article>
-        <article><span>03</span><h3>ICM-20601 I²C Monitor</h3><p>Dual-I²C architecture, contiguous motion-data reads and moving-average filtering for stable telemetry.</p><div class="tags">I²C · Filtering · Sensors</div><a href="https://github.com/YOUR_GITHUB_USERNAME/stm32g4-icm20601-i2c-monitor">Repository →</a></article>
-        <article><span>04</span><h3>SH1107 Display Driver</h3><p>2048-byte framebuffer, pixel/line/rectangle primitives and page-wise OLED transfer.</p><div class="tags">Graphics · Framebuffer · I²C</div><a href="https://github.com/YOUR_GITHUB_USERNAME/stm32g4-sh1107-display-driver">Repository →</a></article>
-      </div>
-    </section>
-    <section id="about" class="about"><p class="eyebrow">APPROACH</p><h2>Code is only one part of the deliverable.</h2><p>I document architecture, design decisions, peripheral configuration, validation evidence, limitations and reproducible build steps so each project can be reviewed as an engineering artifact.</p></section>
-  </main>
-  <footer><span>Burak Bekir Çakırer</span><span>Engineering Portfolio</span></footer>
-</body>
-</html>
+<header class="nav"><a class="brand" href="#top">BBC<span>.</span></a><nav>
+<a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#stack">Stack</a><a href="#contact">Contact</a>
+</nav></header>
+
+<main id="top">
+<section class="hero">
+<div class="eyebrow">ELECTRICAL & ELECTRONICS ENGINEERING</div>
+<h1>Burak Bekir<br><span>Çakırer.</span></h1>
+<p class="lead">I build hardware-oriented systems across embedded firmware, PCB design, power electronics, control and robotics — with an emphasis on measurable engineering evidence.</p>
+<div class="actions">
+<a class="btn primary" href="#projects">View Projects</a>
+<a class="btn" href="Burak_Bekir_Cakirer_CV.pdf">Download CV</a>
+<a class="textlink" href="https://github.com/burakcakirer">GitHub ↗</a>
+<a class="textlink" href="https://www.linkedin.com/in/burak-bekir-%C3%A7akirer-58178b1a3/">LinkedIn ↗</a>
+</div>
+<div class="metrics"><div><b>STM32G4</b><span>Embedded firmware</span></div><div><b>Altium</b><span>PCB & hardware</span></div><div><b>Bench-tested</b><span>Scope validation</span></div></div>
+</section>
+
+<section class="section intro">
+<div><div class="kicker">ABOUT</div><h2>Hardware first.<br>Evidence driven.</h2></div>
+<p>Electrical & Electronics Engineering student focused on embedded hardware, power electronics, PCB design and signal integrity. My work spans STM32 firmware, peripheral integration, real-time sensor acquisition, converter design, oscilloscope-based validation and autonomous systems.</p>
+</section>
+
+<section id="projects" class="section">
+<div class="kicker">SELECTED WORK</div><h2>Featured engineering projects.</h2>
+<div class="grid">
+<article class="card feature">
+<img src="assets/images/fan-prototype.jpg" alt="STM32 PWM fan prototype">
+<div class="cardbody"><span class="num">01 / EMBEDDED</span><h3>STM32G4 PWM Fan Monitor</h3><p>Hardware PWM actuation with timer input capture, tachometer feedback, RPM calculation and SH1107 OLED telemetry.</p><div class="tags"><span>STM32G431</span><span>PWM</span><span>Input Capture</span><span>I²C</span></div><a href="https://github.com/burakcakirer/stm32g4-pwm-fan-monitor">View repository ↗</a></div>
+</article>
+<article class="card">
+<img src="assets/images/imu-setup.jpg" alt="STM32 ICM-20601 IMU setup">
+<div class="cardbody"><span class="num">02 / SENSORS</span><h3>ICM-20601 SPI Telemetry</h3><p>Register-level SPI communication, burst sensor acquisition and real-time OLED visualization.</p><div class="tags"><span>SPI</span><span>IMU</span><span>SH1107</span></div><a href="https://github.com/burakcakirer/stm32g4-icm20601-spi-telemetry">View repository ↗</a></div>
+</article>
+<article class="card">
+<img src="assets/images/imu-oled.jpg" alt="IMU telemetry on OLED">
+<div class="cardbody"><span class="num">03 / DATA ACQUISITION</span><h3>ICM-20601 I²C Monitor</h3><p>14-byte burst acquisition, accelerometer/gyroscope processing, moving-average filtering and OLED telemetry.</p><div class="tags"><span>I²C</span><span>Filtering</span><span>Telemetry</span></div><a href="https://github.com/burakcakirer/stm32g4-icm20601-i2c-monitor">View repository ↗</a></div>
+</article>
+<article class="card textcard"><div class="cardbody"><span class="num">04 / PCB DESIGN</span><h3>Autonomous Defense System Power Board</h3><p>Custom multi-rail power distribution board for motors, microcontrollers, sensors and laser subsystems, with protection, grounding, thermal and current-carrying constraints.</p><div class="tags"><span>Altium</span><span>Power</span><span>Protection</span></div><span class="status">ONGOING</span></div></article>
+<article class="card textcard"><div class="cardbody"><span class="num">05 / ROBOTICS</span><h3>Autonomous Guided Vehicle</h3><p>Capstone autonomous mobile robot using A* global planning, Dynamic Window Approach, PID speed control and LiDAR–odometry integration.</p><div class="tags"><span>A*</span><span>DWA</span><span>PID</span><span>LiDAR</span></div><span class="status">ONGOING</span></div></article>
+<article class="card textcard"><div class="cardbody"><span class="num">06 / ANALOG</span><h3>Touch Sensor Interface</h3><p>Analog readout converting small capacitance changes into a repeatable DC output using AC excitation, discrete transistor amplification and AC–DC conversion.</p><div class="tags"><span>Analog</span><span>BJT</span><span>LTspice</span></div></div></article>
+</div>
+</section>
+
+<section class="section validation">
+<div class="kicker">HARDWARE VALIDATION</div><h2>Not just simulated.<br>Measured on the bench.</h2>
+<div class="evidence">
+<figure><img src="assets/images/fan-oled.jpg" alt="Fan telemetry OLED"><figcaption><b>Live telemetry</b><span>25% target PWM · 19 Hz tachometer · 570 RPM</span></figcaption></figure>
+<figure><img src="assets/images/tach-scope.png" alt="Tachometer oscilloscope capture"><figcaption><b>Tachometer feedback</b><span>Physical waveform inspection</span></figcaption></figure>
+<figure><img src="assets/images/i2c-scope.png" alt="I2C SCL SDA oscilloscope capture"><figcaption><b>I²C bus validation</b><span>SCL / SDA electrical inspection</span></figcaption></figure>
+</div>
+</section>
+
+<section id="experience" class="section">
+<div class="kicker">EXPERIENCE</div><h2>Engineering experience.</h2>
+<div class="timeline">
+<article><div class="when">2026</div><div><h3>Hardware Design Engineering Intern</h3><h4>Vestel Elektronik A.Ş. · Electric Vehicle Charger Hardware Design Team</h4><p>Worked across STM32 peripheral integration, SH1107 display development, ICM-20601 I²C/SPI integration, power-management blocks, oscilloscope validation, EMI investigation and high-speed PCB design practices.</p><div class="tags"><span>STM32</span><span>Power Electronics</span><span>EMI/EMC</span><span>PCB/SI</span></div></div></article>
+<article><div class="when">2025</div><div><h3>Embedded Systems Engineering Intern</h3><h4>MTM Biotech</h4><p>Developed BMI323 IMU firmware across STM32, Arduino and nRF52 platforms, including register-level I²C/SPI, interrupt-driven motion detection, BLE telemetry and SD-card logging.</p><div class="tags"><span>nRF52</span><span>BLE</span><span>SPI</span><span>Data Logging</span></div></div></article>
+</div>
+</section>
+
+<section id="stack" class="section">
+<div class="kicker">TECHNICAL STACK</div><h2>Tools I use to build.</h2>
+<div class="stack">
+<div><h3>Embedded</h3><p>C · C++ · STM32G431RB · ATmega328P · nRF52 · Raspberry Pi Zero W</p></div>
+<div><h3>Interfaces</h3><p>I²C · SPI · UART · BLE · PWM · ADC · Timers · Interrupts</p></div>
+<div><h3>Hardware</h3><p>Buck Converters · LDOs · MOSFET Gate Driving · Op-Amps · BJTs · Filters</p></div>
+<div><h3>PCB & SI</h3><p>Altium Designer · Controlled Impedance · Differential Pairs · Length Matching · Crosstalk · EMI/EMC</p></div>
+<div><h3>Engineering Tools</h3><p>STM32CubeIDE · LTspice · MATLAB · Oscilloscope · Signal Generator · Near-Field Probe · Git</p></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="kicker">CONTACT</div><h2>Let's build something<br>that works in hardware.</h2>
+<p>Open to embedded systems, hardware design, PCB, control and robotics opportunities.</p>
+<div class="actions"><a class="btn primary" href="mailto:burakbekir.cakirer@agu.edu.tr">Email me</a><a class="btn" href="Burak_Bekir_Cakirer_CV.pdf">CV</a><a class="textlink" href="https://github.com/burakcakirer">GitHub ↗</a><a class="textlink" href="https://www.linkedin.com/in/burak-bekir-%C3%A7akirer-58178b1a3/">LinkedIn ↗</a></div>
+</section>
+</main>
+<footer>© 2026 Burak Bekir Çakırer <span>Electrical & Electronics Engineering Portfolio</span></footer>
+</body></html>
