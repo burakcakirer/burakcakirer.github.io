@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Çakırer;Burak Bekir;;;
+FN:Burak Bekir Çakırer
+ORG:Abdullah Gül University
+TITLE:Electrical & Electronics Engineering Student
+EMAIL;TYPE=INTERNET,PREF:burakcakirer2004@gmail.com
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/burak-bekir-%C3%A7akirer-58178b1a3/
+URL;TYPE=GitHub:https://github.com/burakcakirer
+URL;TYPE=Portfolio:https://burakcakirer.github.io/
+NOTE:Embedded hardware · PCB design · Power electronics. Met at COP31.
+END:VCARD

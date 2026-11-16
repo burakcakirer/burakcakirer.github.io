@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Burak Bekir Çakırer · Connect</title>
+<meta name="description" content="Electrical & Electronics Engineering student — embedded hardware, PCB design, power electronics. Connect on LinkedIn or view my CV.">
+<meta property="og:title" content="Burak Bekir Çakırer">
+<meta property="og:description" content="Embedded hardware · PCB design · Power electronics. Connect on LinkedIn or view my CV.">
+<meta property="og:type" content="profile">
+<meta name="theme-color" content="#f6f3ea">
+<style>
+  :root{
+    --paper:#f6f3ea; --grid:rgba(23,54,93,.07); --ink:#17365d; --ink-soft:#4b5d73;
+    --rule:#c9463d; --line:rgba(23,54,93,.18);
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{min-height:100%}
+  body{
+    font-family:var(--sans); color:var(--ink); background:var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size:22px 22px;
+    -webkit-font-smoothing:antialiased;
+    display:flex; justify-content:center;
+    padding:max(28px, env(safe-area-inset-top)) 20px max(28px, env(safe-area-inset-bottom));
+  }
+  main{width:100%; max-width:420px; position:relative; padding-left:22px}
+  main::before{ /* notebook margin rule */
+    content:""; position:absolute; left:0; top:-8px; bottom:-8px; width:2px; background:var(--rule); opacity:.55;
+  }
+  .meta{font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--ink-soft); display:flex; justify-content:space-between; margin-bottom:26px}
+  .head{display:flex; gap:16px; align-items:center}
+  .stamp{flex:none; width:68px; height:68px; border:2px solid var(--ink); border-radius:50%;
+    display:grid; place-items:center; font-family:var(--mono); font-weight:700; font-size:22px;
+    letter-spacing:.02em; transform:rotate(-8deg); position:relative}
+  .stamp::after{content:""; position:absolute; inset:4px; border:1px dashed var(--ink); border-radius:50%; opacity:.5}
+  h1{font-size:27px; line-height:1.12; font-weight:750; letter-spacing:-.01em}
+  .role{margin-top:4px; font-size:14.5px; color:var(--ink-soft); line-height:1.35}
+  .tags{margin:22px 0 6px; display:flex; flex-wrap:wrap; gap:6px}
+  .tags span{font-family:var(--mono); font-size:11.5px; border:1px solid var(--line); background:rgba(255,255,255,.55);
+    padding:5px 8px; border-radius:3px}
+  .note{margin:16px 0 26px; font-size:14px; line-height:1.5; color:var(--ink-soft);
+    border-left:3px solid var(--line); padding:2px 0 2px 12px}
+  .note b{color:var(--ink); font-weight:650}
+  .actions{display:grid; gap:10px}
+  .btn{display:flex; align-items:center; gap:14px; text-decoration:none; color:var(--ink);
+    background:#fffdf7; border:1.5px solid var(--ink); border-radius:6px; padding:15px 16px;
+    box-shadow:3px 3px 0 var(--ink); transition:transform .08s, box-shadow .08s; -webkit-tap-highlight-color:transparent}
+  .btn:active{transform:translate(2px,2px); box-shadow:1px 1px 0 var(--ink)}
+  .btn.primary{background:var(--ink); color:#fff; box-shadow:3px 3px 0 var(--rule)}
+  .btn.primary:active{box-shadow:1px 1px 0 var(--rule)}
+  .btn svg{flex:none; width:22px; height:22px}
+  .btn .t{display:flex; flex-direction:column; line-height:1.2}
+  .btn .t strong{font-size:16px; font-weight:650}
+  .btn .t small{font-family:var(--mono); font-size:11px; opacity:.72; margin-top:3px}
+  .btn .arr{margin-left:auto; font-family:var(--mono); opacity:.6}
+  footer{margin-top:28px; padding-top:16px; border-top:1px dashed var(--line);
+    display:flex; gap:18px; flex-wrap:wrap; font-family:var(--mono); font-size:12.5px}
+  footer a{color:var(--ink); text-underline-offset:3px}
+  .sig{margin-top:18px; font-family:var(--mono); font-size:10.5px; color:var(--ink-soft); opacity:.8}
+</style>
+</head>
+<body>
+<main>
+  <div class="meta"><span>Contact card</span><span>Rev. B</span></div>
+
+  <div class="head">
+    <div class="stamp" aria-hidden="true">BÇ</div>
+    <div>
+      <h1>Burak Bekir Çakırer</h1>
+      <p class="role">Electrical &amp; Electronics Engineering Student<br>Abdullah Gül University, Türkiye</p>
+    </div>
+  </div>
+
+  <div class="tags">
+    <span>Embedded hardware</span><span>PCB design</span><span>Power electronics</span><span>STM32</span>
+  </div>
+
+  <p class="note"><b>element14 Project14 Show &amp; Tell winner</b> with a custom STM32F405 flight-controller PCB. Hardware internships at Vestel (EV charger hardware) and MTM Biotech.</p>
+
+  <div class="actions">
+    <a class="btn primary" href="https://www.linkedin.com/in/burak-bekir-%C3%A7akirer-58178b1a3/" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      <span class="t"><strong>Connect on LinkedIn</strong><small>opens the app if installed</small></span>
+      <span class="arr">→</span>
+    </a>
+    <a class="btn" href="Burak_Bekir_Cakirer_CV.pdf" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+      <span class="t"><strong>View my CV</strong><small>PDF · 2 pages</small></span>
+      <span class="arr">→</span>
+    </a>
+    <a class="btn" href="burak-bekir-cakirer.vcf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+      <span class="t"><strong>Save contact</strong><small>adds me to your phone contacts</small></span>
+      <span class="arr">↓</span>
+    </a>
+    <a class="btn" href="mailto:burakcakirer2004@gmail.com?subject=Nice%20to%20meet%20you">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      <span class="t"><strong>Email me</strong><small>burakcakirer2004@gmail.com</small></span>
+      <span class="arr">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <a href="https://github.com/burakcakirer" rel="noopener">GitHub</a>
+    <a href="https://burakcakirer.github.io/" rel="noopener">Portfolio</a>
+  </footer>
+  <p class="sig">// thanks for scanning — let's keep in touch</p>
+</main>
+</body>
+</html>
