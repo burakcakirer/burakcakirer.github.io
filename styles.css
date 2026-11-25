@@ -159,7 +159,7 @@ footer{
 
 /* Honors & awards */
 .awards-section{border-top:1px solid var(--line)}
-.awards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.awards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .award{
   border:1px solid var(--line);background:var(--panel);padding:30px;
   border-top:2px solid var(--accent);display:flex;flex-direction:column
@@ -169,7 +169,7 @@ footer{
 .award p{color:var(--muted);margin:0}
 .award p b{color:var(--text)}
 .award .tags{margin:auto 0 0;padding-top:20px}
-@media(max-width:1000px){.awards{grid-template-columns:1fr}}
+@media(max-width:760px){.awards{grid-template-columns:1fr}}
 @media(max-width:760px){
   .availability p{font-size:15px}
   .award{padding:24px}

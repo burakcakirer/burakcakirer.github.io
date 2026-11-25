@@ -23,7 +23,7 @@ my hardware and embedded-systems work with photos, measurements and links to the
 | Section | Content |
 |---|---|
 | **Projects** | STM32 firmware (PWM fan monitor, ICM-20601 SPI/I²C telemetry, SH1107 OLED driver), PCB designs (STM32F405 flight controller, I²C sensor shield, Core45 IoT & battery-management PCB, TEKNOFEST power distribution board), analog & digital electronics, Göktaş Autonomous Forklift AGV (senior design project), transformer FEM optimization, galvo laser scanner, Karbon Pusula (climate tech) |
-| **Honors & Awards** | element14 Project14 / em-smart PCBC 1st Place, COP31 Climate Technologies Creathon 3rd Place, TEKNOFEST Çelikkubbe (GÖKTAŞ Team) |
+| **Honors & Awards** | element14 Project14 Show & Tell 1st Place (STM32F405 flight controller), em-smart PCB Challenge 2026 Excellence Award & Official Reference Design (I²C sensor shield), COP31 Climate Technologies Creathon 3rd Place, TEKNOFEST Çelikkubbe (GÖKTAŞ Team) |
 | **Experience** | Hardware Design Engineering Intern — Vestel Elektronik (EV Charger team) · Embedded Systems Engineering Intern — MTM Biotech |
 | **Stack** | Embedded, interfaces, hardware, PCB & signal integrity, engineering tools |
 | **Contact** | Email, LinkedIn, GitHub, downloadable CV |
